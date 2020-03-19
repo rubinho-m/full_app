@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" >
+
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block content %}
+Фамилия - {{ surname }} <br>
+Имя - {{ name }} <br>
+Образование - {{ education }} <br>
+Профессия - {{ prof }} <br>
+Пол - {{ sex }} <br>
+Мотивация - {{ motivation }} <br>
+Готовы остаться на Марсе? - {{ ready }} <br>
+{% endblock %}
+</body>
+</html>

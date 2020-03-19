@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block content %}
+<table>
+    <tr>
+        <th>Цвет стен</th>
+        <th>Марсианин</th>
+    </tr>
+    <tr>
+        {% if sex == 'male' %}
+        <td id="blue"></td>
+        {% elif sex == 'female' %}
+        <td id="pink"></td>
+        {% endif %}
+        {% if age < 21 %}
+        <td><img src="/static/img/child.png" height="300px"></td>
+        {% else %}
+        <td><img src="/static/img/big.jpg" height="300px"></td>
+        {% endif %}
+    </tr>
+</table>
+{% endblock %}
+</body>
+</html>
